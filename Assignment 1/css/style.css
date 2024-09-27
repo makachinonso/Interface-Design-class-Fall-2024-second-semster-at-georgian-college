@@ -1,0 +1,385 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    background-image: url("../img/beach.jpg");
+    background-size: cover;
+    background-color: #FFCAAA;
+    background-attachment: fixed;
+}
+
+/* External Fonts */
+@font-face {
+    font-family: "NaftaLight";
+    src: url("../fonts/NaftaLight-Regular.ttf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Nature";
+    src: url("../fonts/Nature-BF66ec15eeacaeb.otf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Nighty";
+    src: url("../fonts/Nightydemo.otf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Pandicorn";
+    src: url("../fonts/Pandicorn FREE.otf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Skyzone";
+    src: url("../fonts/Skyzone.otf");
+    font-weight: auto;
+}
+@font-face {
+    font-family: "Kittenish";
+    src: url("../fonts/KittenishDemo.ttf");
+    font-weight: auto;
+}
+
+a{
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Poetsen One", sans-serif;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Kittenish", sans-serif;
+    text-align: center;
+    letter-spacing: 8px;
+    word-spacing: 6px;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.8);
+}
+h2{
+    font-family: "Pandicorn", sans-serif;
+}
+
+/** Header styling **/
+header{
+    margin-bottom: 0;
+    height: 120px;
+    width: 100%;
+    background-color: #E99BAF;
+    display: flex;
+    align-items: center;
+}
+
+/** Header logo styling **/
+.headerlogo{
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: auto;
+    height: 90%;
+}
+.bandlogo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    justify-content: space-around;
+}
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #74132C;
+    border-radius: 50%;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #74132C;
+}
+.letterm{
+    height: 50px;
+    width: 50px;
+    background-color: #74132C;
+}
+.angle{
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 35px solid #E99BAF;
+}
+menu{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+menu > li{
+    padding: 0px 10px;
+}
+menu > li > a{
+    color: #000000;
+}
+
+/* Main header styling */
+h1 > span{
+    font-size: 80px;
+
+}
+
+/** the main content **/
+
+/** album cover and track details styling **/
+.biocontainer{
+    background-color: #E99BAF;
+    width: auto;
+    height: 380px;
+    border: 5px solid #74132C;
+    border-radius: 10px;
+    text-align: center;
+    padding: 0px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure{
+    padding: 0px;
+    margin: 0px;
+}
+figcaption{
+    font: 15px Arial, sans-serif;
+    text-align: center;
+    font-style: italic;
+}
+.albumart{
+    width: auto;
+    height: 350px;
+    padding: 0px;
+    margin: 25px 50px;
+}
+.albumart > figure > img{
+    border-radius: 8px;
+    height: 305px;
+    width: 300px;
+}
+.bio{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #6D9EB6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.bio > p{
+    font-family: "Gluten", cursive;
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+.highlight{
+    font-size: 20px;
+    font-weight: bold;
+}
+.fanart{
+    width: auto;
+    height: 350px;
+    padding: 0px;
+    margin: 25px 50px;
+}
+.fanart > figure > img{
+    border-radius: 8px;
+    height: 305px;
+    width: 300px;
+}
+
+/** Lyrics container styling **/
+.lyricscont{
+    background-color: rgba(109, 158, 182, 0.6);
+    width: auto;
+    height: auto;
+    border: 5px solid #74132C;
+    border-radius: 10px;
+    /*text-align: center;*/
+    padding: 0px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.lyricscont > h2{
+    font-size: 70px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-shadow: 4px 2px 4px rgba(0,0,0,.7);
+}
+.lyricscont > p{
+    line-height: 2.0;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.jump{
+    background-color: rgba(0,0,0,0);
+    font-family: "Bigelow Rules", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.forest{
+    background-color: rgba(0,0,0,0);
+    font-family: "Nature", serif;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    color: #17600F;
+}
+.birds{
+    background-color: rgba(0,0,0,0);
+    font-family: "Fascinate Inline", system-ui;
+    font-size: 35px;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    word-spacing: 8px;
+}
+.beast{
+    background-color: rgba(0,0,0,0);
+    font-family: "NaftaLight", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+.animal{
+    background-color: rgba(0,0,0,0);
+    font-family: "Skyzone", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+#black{
+    color: black;
+    font-size: 60px;
+}
+.cold{
+    background-color: rgba(0,0,0,0);
+    font-family: "Pandicorn", sans-serif;
+    font-size: 40px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    color: #0D55A6;
+}
+.narrate{
+    background-color: rgba(0,0,0,0);
+    font-family: "Nighty", serif;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+#copyright{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+#frame{
+    border: none;
+    margin: 20px;
+}
+
+/** Header styling **/
+footer{
+    background-color: #E99BAF;
+    width: auto;
+    height: 200px;
+    margin-bottom: 0px;
+}
+.footercont{
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    margin: 0px;
+}
+.fanbandlogo{
+    width: auto;
+    height: auto;
+    padding-left: 80px;
+    padding-right: 0px;
+    padding-top: 20px;
+}
+.fanbandlogo > img{
+    width: 120px;
+    height: 137px;
+}
+.about{
+    height: 120px;
+    width: auto;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-left: 2px solid black;
+}
+.about > h3{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+.footerbio{
+    text-align: justify;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.footercopyrights{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid black;
+    padding-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
