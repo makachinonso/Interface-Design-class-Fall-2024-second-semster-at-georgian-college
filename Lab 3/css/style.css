@@ -26,13 +26,13 @@ button{
 }
 
 button:hover{
-    transition-delay: 0;
+    transition-delay: 1.5s;
     color: #000;
     box-shadow: 0 0 10px #0fe,
-    0 0 20px #0fe,
-    0 0 40px #0fe,
-    0 0 80px #0fe,
-    0 0 100px #0fe;
+                0 0 20px #0fe,
+                0 0 40px #0fe,
+                0 0 80px #0fe,
+                0 0 100px #0fe;
 }
 
 button span{
@@ -40,7 +40,7 @@ button span{
     z-index: 9999;
 }
 
-button:before{
+button::before{
     content: "";
     position: absolute;
     left: -20px;
@@ -50,10 +50,36 @@ button:before{
     height: 2px;
     background: #0ef;
     box-shadow: 5px -8px #0ef, 5px 8px #0ef;
-    transition: width0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
     transition-delay: 1s, 0.5s, 0s, 0s;
 }
 
 button:hover::before{
-    width
+    width: 60%;
+    height: 100%;
+    left: -2px;
+    box-shadow: 5px 0 0 #0ef, 5px 0 0 #0ef;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+button::after{
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #0ef;
+    box-shadow: -5px -8px #0ef, -5px 8px #0ef;
+    transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+button:hover::after{
+    width: 60%;
+    height: 100%;
+    right: -2px;
+    box-shadow: -5px 0 0 #0ef, -5px 0 0 #0ef;
+    transition-delay: 0s, 0.5s, 1s, 1s;
 }
